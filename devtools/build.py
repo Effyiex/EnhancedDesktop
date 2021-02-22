@@ -99,7 +99,7 @@ def clear_cache():
 def pack_data():
     print(f"-START- Packing -START-")
     cache = find_files(f"{DIR}/production", log = False)
-    os.system(f"jar cmvf \"{DIR}/source/manifest\" \"{DIR}/ESRCompiler.jar\" -C \"{DIR}/production\" .")
+    os.system(f"jar cmvf \"{DIR}/source/manifest\" \"{DIR}/EnhancedDesktop.jar\" -C \"{DIR}/production\" .")
     print(f"-FINISH- Packing -FINISH-")
 
 def main():
